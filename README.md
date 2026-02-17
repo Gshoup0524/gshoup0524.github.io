@@ -1,11 +1,9 @@
-# gshoup0524.github.io
-@@ -1 +1,608 @@
 your-repo/
   index.html
   about.html
   assets/
     CORAL.COO.jpg
-    Gen-4 Turbo Make the blue coral glow, and other words start to glow the corresponding colors of the word Add a neon sign, fish swimming by, and place the coral cool aid in the foreground 1846376031.mp4
+    VideoCCA.mp4
 
     20190401_202743.jpg
     20190401_203250.jpg
@@ -14,8 +12,9 @@ your-repo/
     20240109_201121.jpg
     20240109_201100.jpg
     DSC00120.JPG
-    product-08.png   (recommended rename for the screenshot image)
-<!doctype html>
+  Screenshot%202024-07-26%20at%209.08.26%20PM.png
+
+  <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -57,7 +56,7 @@ your-repo/
       max-width:1120px; margin:0 auto; padding:14px 18px;
       display:flex; align-items:center; justify-content:space-between; gap:14px;
     }
-    .brand{display:flex; align-items:center; gap:12px; min-width: 240px;}
+    .brand{display:flex; align-items:center; gap:12px; min-width:240px;}
     .logo{
       width:56px; height:56px; border-radius:14px; object-fit:cover;
       box-shadow: 0 0 0 1px rgba(255,255,255,.14), 0 14px 40px rgba(0,0,0,.35);
@@ -276,7 +275,7 @@ your-repo/
           <div class="videoFrame">
             <!-- Landing video (AI-generated ~5 seconds) -->
             <video autoplay loop muted playsinline preload="auto">
-              <source src="assets/Gen-4%20Turbo%20Make%20the%20blue%20coral%20glow,%20and%20other%20words%20start%20to%20glow%20the%20corresponding%20colors%20of%20the%20word%20Add%20a%20neon%20sign,%20fish%20swimming%20by,%20and%20place%20the%20coral%20cool%20aid%20in%20the%20foreground%201846376031.mp4" type="video/mp4" />
+              <source src="assets/VideoCCA.mp4" type="video/mp4" />
             </video>
             <div class="videoLabel">AI reel • auto-loop</div>
           </div>
@@ -465,6 +464,7 @@ your-repo/
   <script async data-id="3966659496" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 </body>
 </html>
+
 <!doctype html>
 <html lang="en">
 <head>
