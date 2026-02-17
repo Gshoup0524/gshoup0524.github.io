@@ -1,24 +1,13 @@
-your-repo/
-  index.html
-  about.html
-  assets/
-    CORAL.COO.jpg
-    VideoCCA.mp4
-
-    20190401_202743.jpg
-    20190401_203250.jpg
-    20190401_203302.jpg
-    20190111_224540.jpg
-    20240109_201121.jpg
-    20240109_201100.jpg
-    DSC00120.JPG
-  Screenshot%202024-07-26%20at%209.08.26%20PM.png
-
-  data-img="assets/Screenshot%202024-07-26%20at%209.08.26%20PM.png"
-<img class="thumb" src="assets/Screenshot%202024-07-26%20at%209.08.26%20PM.png" alt="Product coral 8">
-
-
-  <!doctype html>
+<!-- =========================
+     index.html  (GitHub Pages Ready)
+     - Uses assets/VideoCCA.mp4
+     - Uses your logo: assets/CORAL.COO.jpg
+     - Keeps screenshot name EXACT (URL-encoded in paths)
+     - Adds About section on front page
+     - Chatbot on BOTH pages
+     - X-Factor + <50 words
+========================= -->
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -77,6 +66,7 @@ your-repo/
       cursor:pointer;
       transition: transform .18s ease, background .18s ease, border-color .18s ease;
       font-weight:700; font-size:13px;
+      display:inline-flex; align-items:center; gap:8px;
     }
     .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.10); border-color: rgba(255,255,255,.22)}
     .btn.primary{
@@ -95,6 +85,7 @@ your-repo/
       align-items:stretch;
     }
     @media (max-width: 900px){ .hero{grid-template-columns:1fr;} }
+
     .card{
       background: var(--panel);
       border:1px solid rgba(255,255,255,.10);
@@ -154,7 +145,17 @@ your-repo/
 
     .section{margin-top:26px}
     .section h2{margin:0 0 10px; font-size:18px; letter-spacing:.2px}
-    .section p{margin:0; color:var(--muted); font-size:14px; line-height:1.45}
+    .section p{margin:0; color:var(--muted); font-size:14px; line-height:1.55}
+
+    .aboutGrid{margin-top:14px; display:grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap:12px;}
+    @media (max-width: 980px){ .aboutGrid{grid-template-columns:1fr} }
+    .aboutMini{
+      padding:14px; border-radius:16px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .aboutMini strong{display:block; font-size:13px; letter-spacing:.2px}
+    .aboutMini span{display:block; margin-top:6px; color:var(--muted); font-size:12px; line-height:1.45}
 
     .grid{margin-top:14px; display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:12px;}
     @media (max-width: 980px){ .grid{grid-template-columns: repeat(2, minmax(0,1fr));} }
@@ -201,7 +202,7 @@ your-repo/
     .modal img{width:100%; height:100%; object-fit:cover; min-height:320px}
     .modalInfo{padding:16px}
     .modalInfo h3{margin:0 0 8px; font-size:18px}
-    .modalInfo p{margin:0; color:var(--muted); font-size:14px; line-height:1.45}
+    .modalInfo p{margin:0; color:var(--muted); font-size:14px; line-height:1.55}
     .modalClose{
       margin-top:12px; width:fit-content;
       padding:10px 14px; border-radius:999px;
@@ -245,7 +246,8 @@ your-repo/
       </div>
 
       <div class="actions">
-        <a class="btn" href="about.html">About</a>
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="about.html">More</a>
         <a class="btn primary" href="#products">Shop the Drop</a>
       </div>
     </div>
@@ -263,7 +265,7 @@ your-repo/
 
           <div class="heroCtas">
             <a class="btn primary" href="#products">Browse products</a>
-            <a class="btn" href="about.html">How we grow</a>
+            <a class="btn" href="#about">What is Coral Cool Aid?</a>
           </div>
 
           <div class="quickFacts">
@@ -287,6 +289,39 @@ your-repo/
       </div>
     </section>
 
+    <!-- ABOUT SECTION (NEW) -->
+    <section class="section" id="about">
+      <h2>About Coral Cool Aid</h2>
+      <p>
+        Coral Cool Aid is a boutique coral brand focused on vibrant, aquacultured pieces that shine under blue lighting.
+        We prioritize clean systems, consistent husbandry, and photo-true listings so what you see is what you get.
+      </p>
+      <p style="margin-top:10px;">
+        Our goal is simple: deliver standout corals that color up fast, grow strong, and become the centerpiece of your reef.
+        Need help with placement, acclimation, or flow? Ask the chatbot any time.
+      </p>
+
+      <div class="aboutGrid">
+        <div class="aboutMini">
+          <strong>Sustainably grown</strong>
+          <span>Propagated with stability and long-term color in mind—less pressure on wild reefs.</span>
+        </div>
+        <div class="aboutMini">
+          <strong>Photo-true listings</strong>
+          <span>Clear photos under reef lighting so you can shop with confidence.</span>
+        </div>
+        <div class="aboutMini">
+          <strong>Care support</strong>
+          <span>Quick guidance on PAR, flow, acclimation, and compatibility via the Coral Bot.</span>
+        </div>
+      </div>
+
+      <div style="margin-top:14px;">
+        <a class="btn" href="about.html">Read the full story →</a>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
     <section class="section" id="products">
       <h2>Featured Products</h2>
       <p>Click any coral to spotlight it (bigger view + quick notes).</p>
@@ -330,8 +365,9 @@ your-repo/
           <div class="pbody"><h3 class="pname">Neon Ember</h3><p class="ptag">Ultra vibrant • centerpiece</p></div>
         </article>
 
-        <article class="product" data-name="Lilac Tips" data-notes="Pastel purple with glowing tips for a clean SPS look." data-img="assets/product-08.png">
-          <img class="thumb" src="assets/product-08.png" alt="Product coral 8">
+        <!-- Product 8 uses the SAME screenshot name (URL-ENCODED PATH) -->
+        <article class="product" data-name="Lilac Tips" data-notes="Pastel purple with glowing tips for a clean SPS look." data-img="assets/Screenshot%202024-07-26%20at%209.08.26%20PM.png">
+          <img class="thumb" src="assets/Screenshot%202024-07-26%20at%209.08.26%20PM.png" alt="Product coral 8">
           <div class="pbody"><h3 class="pname">Lilac Tips</h3><p class="ptag">Crisp color • high appeal</p></div>
         </article>
       </div>
@@ -388,7 +424,7 @@ your-repo/
     modalBack.addEventListener('click', (e)=>{ if(e.target === modalBack) closeModal(); });
     window.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
 
-    // Bubble Reef background
+    // Bubble Reef background (X-Factor)
     const canvas = document.getElementById('reefCanvas');
     const ctx = canvas.getContext('2d');
     let w, h, dpr;
@@ -466,148 +502,5 @@ your-repo/
     window.chtlConfig = { chatbotId: "3966659496" };
   </script>
   <script async data-id="3966659496" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
-</body>
-</html>
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About — Coral Cool Aid</title>
-  <meta name="description" content="About Coral Cool Aid: sustainably grown couture corals with photo-true listings."/>
-
-  <style>
-    :root{
-      --bg:#070b14;
-      --panel: rgba(255,255,255,.07);
-      --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.72);
-      --border: rgba(255,255,255,.14);
-      --shadow: 0 18px 60px rgba(0,0,0,.45);
-      --radius: 18px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      color:var(--text);
-      background:
-        radial-gradient(1100px 650px at 70% 20%, rgba(56,227,255,.14), transparent 60%),
-        radial-gradient(900px 600px at 20% 80%, rgba(255,70,197,.12), transparent 55%),
-        var(--bg);
-    }
-    a{color:inherit; text-decoration:none}
-    header{
-      position:sticky; top:0; z-index:20;
-      background: rgba(7,11,20,.75);
-      backdrop-filter: blur(12px);
-      border-bottom:1px solid rgba(255,255,255,.08);
-    }
-    .nav{
-      max-width:980px; margin:0 auto; padding:14px 18px;
-      display:flex; align-items:center; justify-content:space-between; gap:14px;
-    }
-    .brand{display:flex; align-items:center; gap:12px}
-    .logo{
-      width:52px; height:52px; border-radius:14px; object-fit:cover;
-      box-shadow: 0 0 0 1px rgba(255,255,255,.14), 0 14px 40px rgba(0,0,0,.28);
-      background:#111;
-    }
-    .btn{
-      padding:10px 14px; border-radius:999px;
-      border:1px solid var(--border);
-      background: rgba(255,255,255,.06);
-      cursor:pointer;
-      font-weight:800; font-size:13px;
-    }
-    .wrap{max-width:980px; margin:0 auto; padding:26px 18px 60px}
-    .card{
-      background: var(--panel);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      padding:18px;
-    }
-    h1{margin:0 0 10px; font-size:26px}
-    p{margin:0 0 10px; color:var(--muted); line-height:1.55}
-    .grid{display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-top:12px}
-    @media (max-width: 820px){ .grid{grid-template-columns:1fr} }
-    .mini{
-      background: rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 16px;
-      padding:14px;
-    }
-    footer{
-      margin-top:18px; padding-top:14px;
-      border-top:1px solid rgba(255,255,255,.10);
-      color:var(--muted); font-size:12px;
-      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
-    }
-  </style>
-</head>
-<body>
-<header>
-  <div class="nav">
-    <div class="brand">
-      <img class="logo" src="assets/CORAL.COO.jpg" alt="Coral Cool Aid logo">
-      <div>
-        <div style="font-weight:900; font-size:14px;">Coral Cool Aid</div>
-        <div style="font-size:12px; color:rgba(255,255,255,.72);">Couture corals • sustainably grown</div>
-      </div>
-    </div>
-
-    <div style="display:flex; gap:10px; flex-wrap:wrap;">
-      <a class="btn" href="index.html">Home</a>
-      <a class="btn" href="index.html#products">Products</a>
-    </div>
-  </div>
-</header>
-
-<main class="wrap">
-  <div class="card">
-    <h1>About Coral Cool Aid</h1>
-    <p>
-      Coral Cool Aid is a boutique coral brand focused on vibrant, aquacultured pieces that shine under blue lighting.
-      We prioritize clean systems, consistent husbandry, and photo-true listings so what you see is what you get.
-    </p>
-    <p>
-      Our goal is simple: deliver standout corals that color up fast, grow strong, and become the centerpiece of your reef.
-      If you’re unsure on placement, lighting acclimation, or flow, ask the chatbot below.
-    </p>
-
-    <div class="grid">
-      <div class="mini">
-        <h2 style="margin:0 0 8px; font-size:16px;">How we curate</h2>
-        <p>We select for color, structure, and stability—then track how each piece responds under real reef lighting.</p>
-      </div>
-      <div class="mini">
-        <h2 style="margin:0 0 8px; font-size:16px;">What you’ll get</h2>
-        <p>Healthy frags, honest photos, and quick guidance on placement, flow, and acclimation.</p>
-      </div>
-    </div>
-
-    <div style="margin-top:14px;">
-      <h2 style="margin:0 0 8px; font-size:16px;">Ask the Coral Bot</h2>
-      <p style="margin-bottom:0;">The chatbot is enabled on this page too (required).</p>
-    </div>
-
-    <footer>
-      <div>© <span id="yr"></span> Coral Cool Aid</div>
-      <div><a href="index.html" style="text-decoration:underline;">Back to Home</a></div>
-    </footer>
-  </div>
-</main>
-
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-</script>
-
-<!-- ✅ Chatling Chatbot (second page) -->
-<script>
-  window.chtlConfig = { chatbotId: "3966659496" };
-</script>
-<script async data-id="3966659496" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 </body>
 </html>
