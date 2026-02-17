@@ -14,6 +14,10 @@ your-repo/
     DSC00120.JPG
   Screenshot%202024-07-26%20at%209.08.26%20PM.png
 
+  data-img="assets/Screenshot%202024-07-26%20at%209.08.26%20PM.png"
+<img class="thumb" src="assets/Screenshot%202024-07-26%20at%209.08.26%20PM.png" alt="Product coral 8">
+
+
   <!doctype html>
 <html lang="en">
 <head>
