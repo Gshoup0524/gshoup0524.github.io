@@ -1,8 +1,4 @@
-<!-- =========================
-     index.html (PAGE 1 / HOME)
-     Put this file in the ROOT of your repo: /index.html
-========================= -->
-<!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
