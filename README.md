@@ -1,4 +1,18 @@
-
+<!-- =========================
+     index.html (PAGE 1 / HOME)
+     Files expected in repo ROOT (Option A):
+       CORAL.COO.jpg
+       VideoCCA.mp4
+       20190111_224540.jpg
+       20190401_202743.jpg
+       20190401_203250.jpg
+       20190401_203302.jpg
+       20240109_201100.jpg
+       20240109_201121.jpg
+       DSC00120.JPG
+     Optional (if you have it): Images/Screenshot 2024-07-26 at 9.08.26 PM.png
+========================= -->
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -229,7 +243,8 @@
   <header>
     <div class="nav">
       <div class="brand">
-        <img class="logo" src="assets/CORAL.COO.jpg" alt="Coral Cool Aid logo"/>
+        <!-- FIXED (Option A): logo is in repo root -->
+        <img class="logo" src="CORAL.COO.jpg" alt="Coral Cool Aid logo"/>
         <div>
           <h1>Coral Cool Aid</h1>
           <p>Couture corals • sustainably grown</p>
@@ -271,7 +286,8 @@
         <div class="videoWrap">
           <div class="videoFrame">
             <video autoplay loop muted playsinline preload="auto">
-              <source src="assets/VideoCCA.mp4" type="video/mp4" />
+              <!-- FIXED (Option A): video is in repo root -->
+              <source src="VideoCCA.mp4" type="video/mp4" />
             </video>
             <div class="videoLabel">AI reel • auto-loop</div>
           </div>
@@ -315,46 +331,48 @@
       <p>Click any coral to spotlight it (bigger view + quick notes).</p>
 
       <div class="grid">
-        <article class="product" data-name="Emerald Eyes" data-notes="Bright green glow and crisp contrast under blues." data-img="assets/20190401_202743.jpg">
+        <article class="product" data-name="Emerald Eyes" data-notes="Bright green glow and crisp contrast under blues." data-img="20190401_202743.jpg">
           <span class="badge">NEW</span>
-          <img class="thumb" src="assets/20190401_202743.jpg" alt="Product coral 1">
+          <img class="thumb" src="20190401_202743.jpg" alt="Emerald Eyes coral">
           <div class="pbody"><h3 class="pname">Emerald Eyes</h3><p class="ptag">High fluorescence • photo-true</p></div>
         </article>
 
-        <article class="product" data-name="Blue Velvet" data-notes="Deep-blue tones with a smooth, clean look under actinic." data-img="assets/20190401_203250.jpg">
-          <img class="thumb" src="assets/20190401_203250.jpg" alt="Product coral 2">
+        <article class="product" data-name="Blue Velvet" data-notes="Deep-blue tones with a smooth, clean look under actinic." data-img="20190401_203250.jpg">
+          <img class="thumb" src="20190401_203250.jpg" alt="Blue Velvet coral">
           <div class="pbody"><h3 class="pname">Blue Velvet</h3><p class="ptag">Low-to-mid flow • clean growth</p></div>
         </article>
 
-        <article class="product" data-name="Polka Pop" data-notes="High-contrast patterning for an instant centerpiece feel." data-img="assets/20190401_203302.jpg">
-          <img class="thumb" src="assets/20190401_203302.jpg" alt="Product coral 3">
+        <article class="product" data-name="Polka Pop" data-notes="High-contrast patterning for an instant centerpiece feel." data-img="20190401_203302.jpg">
+          <img class="thumb" src="20190401_203302.jpg" alt="Polka Pop coral">
           <div class="pbody"><h3 class="pname">Polka Pop</h3><p class="ptag">Statement coral • hardy</p></div>
         </article>
 
-        <article class="product" data-name="Golden Bounce" data-notes="Warm glow and soft movement—adds life to any scape." data-img="assets/20190111_224540.jpg">
+        <article class="product" data-name="Golden Bounce" data-notes="Warm glow and soft movement—adds life to any scape." data-img="20190111_224540.jpg">
           <span class="badge">FAVORITE</span>
-          <img class="thumb" src="assets/20190111_224540.jpg" alt="Product coral 4">
+          <img class="thumb" src="20190111_224540.jpg" alt="Golden Bounce coral">
           <div class="pbody"><h3 class="pname">Golden Bounce</h3><p class="ptag">Movement • easy placement</p></div>
         </article>
 
-        <article class="product" data-name="Mint Branch" data-notes="Clean structure builder with cool tones and strong form." data-img="assets/20240109_201121.jpg">
-          <img class="thumb" src="assets/20240109_201121.jpg" alt="Product coral 5">
+        <article class="product" data-name="Mint Branch" data-notes="Clean structure builder with cool tones and strong form." data-img="20240109_201121.jpg">
+          <img class="thumb" src="20240109_201121.jpg" alt="Mint Branch coral">
           <div class="pbody"><h3 class="pname">Mint Branch</h3><p class="ptag">Fast grower • strong form</p></div>
         </article>
 
-        <article class="product" data-name="Teal Ridge" data-notes="Teal-to-aqua with textured ridges. Looks great under mixed spectrum." data-img="assets/20240109_201100.jpg">
-          <img class="thumb" src="assets/20240109_201100.jpg" alt="Product coral 6">
+        <article class="product" data-name="Teal Ridge" data-notes="Teal-to-aqua with textured ridges. Looks great under mixed spectrum." data-img="20240109_201100.jpg">
+          <img class="thumb" src="20240109_201100.jpg" alt="Teal Ridge coral">
           <div class="pbody"><h3 class="pname">Teal Ridge</h3><p class="ptag">Rich texture • steady grow</p></div>
         </article>
 
-        <article class="product" data-name="Neon Ember" data-notes="Warm orange + electric contrast that glows hard under blues." data-img="assets/DSC00120.JPG">
+        <article class="product" data-name="Neon Ember" data-notes="Warm orange + electric contrast that glows hard under blues." data-img="DSC00120.JPG">
           <span class="badge">HOT</span>
-          <img class="thumb" src="assets/DSC00120.JPG" alt="Product coral 7">
+          <img class="thumb" src="DSC00120.JPG" alt="Neon Ember coral">
           <div class="pbody"><h3 class="pname">Neon Ember</h3><p class="ptag">Ultra vibrant • centerpiece</p></div>
         </article>
 
-        <article class="product" data-name="Lilac Tips" data-notes="Pastel purple with glowing tips for a clean SPS look." data-img="assets/Screenshot%202024-07-26%20at%209.08.26%20PM.png">
-          <img class="thumb" src="assets/Screenshot%202024-07-26%20at%209.08.26%20PM.png" alt="Product coral 8">
+        <!-- If you have the screenshot file inside the Images/ folder, this path works.
+             If not, either upload it or replace with another existing .jpg. -->
+        <article class="product" data-name="Lilac Tips" data-notes="Pastel purple with glowing tips for a clean SPS look." data-img="Images/Screenshot%202024-07-26%20at%209.08.26%20PM.png">
+          <img class="thumb" src="Images/Screenshot%202024-07-26%20at%209.08.26%20PM.png" alt="Lilac Tips coral">
           <div class="pbody"><h3 class="pname">Lilac Tips</h3><p class="ptag">Crisp color • high appeal</p></div>
         </article>
       </div>
