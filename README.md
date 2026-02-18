@@ -1,13 +1,8 @@
 <!-- =========================
-     index.html  (GitHub Pages Ready)
-     - Uses assets/VideoCCA.mp4
-     - Uses your logo: assets/CORAL.COO.jpg
-     - Keeps screenshot name EXACT (URL-encoded in paths)
-     - Adds About section on front page
-     - Chatbot on BOTH pages
-     - X-Factor + <50 words
+     index.html (PAGE 1 / HOME)
+     Put this file in the ROOT of your repo: /index.html
 ========================= -->
-
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -279,7 +274,6 @@
       <div class="card">
         <div class="videoWrap">
           <div class="videoFrame">
-            <!-- Landing video (AI-generated ~5 seconds) -->
             <video autoplay loop muted playsinline preload="auto">
               <source src="assets/VideoCCA.mp4" type="video/mp4" />
             </video>
@@ -289,7 +283,6 @@
       </div>
     </section>
 
-    <!-- ABOUT SECTION (NEW) -->
     <section class="section" id="about">
       <h2>About Coral Cool Aid</h2>
       <p>
@@ -321,7 +314,6 @@
       </div>
     </section>
 
-    <!-- PRODUCTS -->
     <section class="section" id="products">
       <h2>Featured Products</h2>
       <p>Click any coral to spotlight it (bigger view + quick notes).</p>
@@ -365,7 +357,6 @@
           <div class="pbody"><h3 class="pname">Neon Ember</h3><p class="ptag">Ultra vibrant • centerpiece</p></div>
         </article>
 
-        <!-- Product 8 uses the SAME screenshot name (URL-ENCODED PATH) -->
         <article class="product" data-name="Lilac Tips" data-notes="Pastel purple with glowing tips for a clean SPS look." data-img="assets/Screenshot%202024-07-26%20at%209.08.26%20PM.png">
           <img class="thumb" src="assets/Screenshot%202024-07-26%20at%209.08.26%20PM.png" alt="Product coral 8">
           <div class="pbody"><h3 class="pname">Lilac Tips</h3><p class="ptag">Crisp color • high appeal</p></div>
@@ -378,7 +369,6 @@
       <p>Use the chatbot for care tips, availability questions, and quick recommendations.</p>
     </section>
 
-    <!-- X-Factor description (UNDER 50 WORDS) -->
     <div class="xdesc">
       X-Factor: Interactive “Bubble Reef” background reacts to your mouse/touch, and each product opens a spotlight modal with a larger photo and quick notes for a premium shop feel.
     </div>
@@ -389,7 +379,6 @@
     </footer>
   </main>
 
-  <!-- Spotlight modal -->
   <div class="modalBack" id="modalBack" role="dialog" aria-modal="true" aria-label="Product spotlight">
     <div class="modal">
       <img id="modalImg" alt="Spotlight coral">
@@ -424,7 +413,6 @@
     modalBack.addEventListener('click', (e)=>{ if(e.target === modalBack) closeModal(); });
     window.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeModal(); });
 
-    // Bubble Reef background (X-Factor)
     const canvas = document.getElementById('reefCanvas');
     const ctx = canvas.getContext('2d');
     let w, h, dpr;
@@ -497,10 +485,10 @@
     step();
   </script>
 
-  <!-- ✅ Chatling Chatbot (landing page) -->
   <script>
     window.chtlConfig = { chatbotId: "3966659496" };
   </script>
   <script async data-id="3966659496" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 </body>
 </html>
+
