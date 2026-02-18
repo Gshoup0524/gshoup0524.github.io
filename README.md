@@ -12,7 +12,6 @@
        DSC00120.JPG
      Optional (if you have it): Images/Screenshot 2024-07-26 at 9.08.26 PM.png
 ========================= -->
-<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
