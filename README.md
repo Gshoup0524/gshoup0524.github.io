@@ -7,7 +7,7 @@
      - Chatbot on BOTH pages
      - X-Factor + <50 words
 ========================= -->
-<!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
